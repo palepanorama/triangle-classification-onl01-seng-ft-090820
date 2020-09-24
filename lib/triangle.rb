@@ -11,7 +11,12 @@ class Triangle
   def kind 
     if @length.any?{|length| length <= 0} || ((@length[0] + @length[1]) <= @length[2])
       raise TriangleError 
-      elsif 
+      elsif @length.uniq.length == 1 
+        :equilateral 
+      elsif @length.uniq.length == 2 
+        :isosceles 
+      else 
+        :scalene 
     end 
   end 
   
