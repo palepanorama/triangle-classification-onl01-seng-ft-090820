@@ -8,6 +8,10 @@ class Triangle
     @length.sort! 
   end 
   
+  def kind 
+    
+  end 
+  
   
   class TriangleError < StandardError 
   end 
