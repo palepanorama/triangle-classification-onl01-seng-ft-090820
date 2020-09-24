@@ -9,7 +9,7 @@ class Triangle
   end 
   
   def kind 
-    if @length.any?{|length| 
+    if @length.any?{|length| length <= 0
   end 
   
   
