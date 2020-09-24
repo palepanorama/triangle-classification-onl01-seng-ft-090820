@@ -7,4 +7,8 @@ class Triangle
     @length = [length_1, length_2, length_3]
     @length.sort! 
   end 
+  
+  
+  class TriangleError < StandardError 
+  end 
 end
